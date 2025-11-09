@@ -15,7 +15,7 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: black;
+    /* background-color: black; */
 }
 
 body {
@@ -68,6 +68,55 @@ ul {
     }
 }
 /* End Global Rules */
+/* Start Components */
+.main-heading {
+    text-align: center;
+}
+
+.main-heading h2 {
+    position: relative;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #1f2021;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+.main-heading h2::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 100px;
+    background-color: #1f2021;
+    bottom: -30px;
+}
+
+.main-heading h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #1f2021;
+    background-color: white;
+    bottom: -36px;
+}
+
+.main-heading p {
+    width: 500px;
+    font-size: 13px;
+    line-height: 25px;
+    color: #a8a8a8;
+    font-weight: 300;
+    margin: 0 auto 100px;
+    max-width: 100%;
+}
+/* End Components */
 /* Start Header */
 header {
     position: absolute;
